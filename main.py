@@ -1,14 +1,17 @@
-opcao_menu = int(input("\nBem vindo ao conversor de Decimais.\nEscolha abaixo a opção que deseja executar:\n[1] Fazer a conversão do decimal - [2] Saber mais sobre o projeto - [3] Sair \n"))
+ opcao_menu = int(input("\nBem vindo ao conversor de Decimais.\nEscolha abaixo a opção que deseja executar:\n[1] Fazer a conversão do decimal - \n[2] Saber mais sobre o projeto - [3] Sair \n"))
+
 #validação das opções
 while opcao_menu != 1 and opcao_menu != 2:
-    print("A opção '", opcao_menu, "' não é uma opção validá, leia com atenção e tente novamente.")
-    opcao_menu = int(input("\nEscolha abaixo a opção que deseja executar:\n[1] Fazer a conversão do decimal - [2] Saber mais sobre o projeto - [3] Sair \n"))
+    print("A opção '", opcao_menu, " não é uma opção validá, leia com atenção e tente novamente.")
+    opcao_menu = int(input("\nEscolha abaixo a opção que deseja executar:\n[1] Fazer a conversão do decimal \n[2] Saber mais sobre o projeto \n[3] Sair \n"))
     
+
 #repetir o programa
 while opcao_menu != 3 or opcao_menu == 0: 
+
     #Caso o usuario escolha essa opção, iremos executar as conversões solicitadas
     if opcao_menu == 1: 
-        num_a_converter = int(input("\nDigite o numero em decimal:"))
+        num_a_converter = int(input("\nDigite o numero em decimal: \n"))
         num_antigo = num_a_converter
         base = int(input("\nEscolha para qual base deseja converter:\n[1] Binario - [2] Octal - [3] Hexadecimal \n"))
         
@@ -75,10 +78,12 @@ while opcao_menu != 3 or opcao_menu == 0:
                 num_a_converter = int(num_a_converter / 16)
             print(f'O número {num_antigo} em Hexadecimal é {num_convertido}')
             
+
     #Caso o usuario escolha essa opção, iremos exibir as informações sobre o projeto
     elif opcao_menu == 2: 
         print("Projeto Interdisciplinar do curso de Análise e Desenvolvimento de Sistemas da Universidade Cruzeiro do Sul - Turma 4D (Noturna).", "\n\nProgramadores:\nGabriel Gustavo Silva de Souza - RGM: 27422623.\nFabio Luiz Teixeira – RGM: 28031270O.", "\n\nDisciplinas:\nEste tema fora escolhido para demonstrar os conhecimentos adquiridos nas aulas de Organização e Arquitetura de Computadores\ne Programação de Computadores por meio da construção e desenvolvimento de um software na linguagem de programação Python.", "\n\nOrientadores:\nProf. Vera Lucia Almeida Forbeck.\nProf. Alvaro Andre Colombero Prado.", "\n\nConversor de decimais - Versão 1.1.0.0 - 2023®™\n")
         
+
     #Caso o usuario escolha essa opção, iremos lhe mostrar uma mensagem de agradecimento e encerraremos o programa
     else: 
         print("\nAgradecemos a utilização do nosso programa, até breve! :)", "\nPrograma encerrado.\n")
@@ -86,7 +91,9 @@ while opcao_menu != 3 or opcao_menu == 0:
     opcao_menu = int(input("\nDeseja encerrar o programa?\n[0] Sim - [1] Não\n"))
 
 
+
+
     ###Projeto realizado por:
-    ###Gabriel Gustavo Silva de Souza - RGM: 27422623
     ###Fabio Luiz Teixeira            – RGM: 28031270O
+    ###Gabriel Gustavo Silva de Souza - RGM: 27422623
     ###Turma de Análise e Desenvolvimento de Sistemas da Universidade Cruzeiro do Sul - Campus Analia Franco - Turma 1º/4ºD (Quinta-feira - Noturno)
