@@ -1,4 +1,4 @@
-opcao_menu = int(input("\nBem vindo ao conversor de Decimais.\nEscolha abaixo a opção que deseja executar:\n[1] Fazer a conversão do decimal - \n[2] Saber mais sobre o projeto - [3] Sair \n"))
+opcao_menu = int(input("\nBem vindo ao conversor de Decimais.\nEscolha abaixo a opção que deseja executar:\n[1] Fazer a conversão do decimal \n[2] Saber mais sobre o projeto \n1[3] Sair \n"))
 
 #validação das opções
 while opcao_menu != 1 and opcao_menu != 2:
